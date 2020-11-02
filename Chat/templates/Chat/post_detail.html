@@ -1,0 +1,12 @@
+{% load crispy_forms_tags %} 
+<html> 
+<head> 
+<title></title> 
+</head> 
+<body> 
+<form method="POST"> 
+	{% csrf_token %} 
+	{{comment_form.as_p}}
+	<input type="submit" name="comment" value="submit"/>
+</form> 
+</body>
