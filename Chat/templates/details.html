@@ -1,0 +1,13 @@
+<html> 
+  <head> 
+  <title></title> 
+  </head> 
+<body> 
+{% for query in queryset %}  
+  
+ {{query.post}}<br>
+ {{query.content}} <br> {{query.opinion}}<br>
+ {{query.op_choices}}
+ {% endfor %}
+  </form> 
+</body>
